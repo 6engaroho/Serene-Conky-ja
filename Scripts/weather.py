@@ -82,7 +82,7 @@ def getWind():
 	for desc in root.iter('item'):
 		title = desc.find('title').text
 		if title[:len(loc) +1] == loc +" ":
-			sep = re.search(r"]\s([東西南北]+)の.+([\d+\.])", title)
+			sep = re.search(r"]\s([東西南北]+)の風\s([\d+\.?]*\d)m/s", title)
 			#~ winddir = sep.group(1)
 			windspd.append(sep.group(2))
 			break
