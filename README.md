@@ -28,4 +28,6 @@ minimum_size 1366 768
 
 Scripts/weather.pyの中の都市設定の部分をそれぞれのサイトで調べて書き換えて下さい。
 
+フォルダ名を.conkyに変えるかstart.shをフォルダ名に合わせて下さい。
 start.shに実行権限を与えて実行して下さい。
+
