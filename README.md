@@ -26,6 +26,8 @@ urllib.request
 minimum_size 1366 768
 をディスプレイの解像度に合わせて書き換えて下さい。
 
+main.luaの中の300行目あたり”downspeed","upspeed"の"(interface)"を、システムのネットワークインターフェイス名に書き換えて下さい。
+
 Scripts/weather.pyの中の都市設定の部分をそれぞれのサイトで調べて書き換えて下さい。
 
 フォルダ名を.conkyに変えるかstart.shをフォルダ名に合わせて下さい。
