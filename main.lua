@@ -306,7 +306,7 @@ function conky_main(  )
 	options.halign = 0
 	options.valign = 0
 	_, _ = lineText('download:', start_x + box_width/20, y + box_height/20 + box_height/120, box_height/20, 'Text Me One', extents, options)
-	local download = trim1(conky_parse("${downspeed wlx0022cf0878b2}"))
+	local download = trim1(conky_parse("${downspeed (interface)}"))
 	options.halign = 1
 	options.width = box_width - box_width/18
 	x, y = lineText(download.."/s", start_x, y + box_height/20 + box_height/120, box_height/20, 'Text Me One', extents, options)
@@ -315,7 +315,7 @@ function conky_main(  )
 	options.halign = 0
 	options.valign = 0
 	_, _ = lineText('upload:', start_x + box_width/20, y + box_height/20 + box_height/120, box_height/20, 'Text Me One', extents, options)
-	local download = trim1(conky_parse("${upspeed wlx0022cf0878b2}"))
+	local download = trim1(conky_parse("${upspeed (interface)}"))
 	options.halign = 1
 	options.width = box_width - box_width/18
 	x, y = lineText(download.."/s", start_x, y + box_height/20 + box_height/120, box_height/20, 'Text Me One', extents, options)
