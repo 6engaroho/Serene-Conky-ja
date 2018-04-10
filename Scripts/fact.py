@@ -8,7 +8,7 @@ import urllib.request
 
 def getFact():
 	
-	#~ # Download from Wikipedia
+	# Download from Wikipedia
 	
 	month = datetime.datetime.today().month
 	day = datetime.datetime.today().day
@@ -19,8 +19,13 @@ def getFact():
 	#~ t = open("Factsample.txt","r")
 	#~ file = t.read()
 	#~ t.close()
+
+	root = ET.fromstring(file)
+	for v in root[1][3]:
+		if re.search(".*text",v.tag):
+			text = v.text.split("\n")
+			break
 	
-	text = (ET.fromstring(file)[1][3][7].text).split("\n")
 	step = 0 
 	event = []
 	birth = []
